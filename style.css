@@ -204,21 +204,6 @@ section{
     transform: scale(1.2);
 
 }
-.social-media-icons{
-    display: flex;
-    gap: 2rem;
-
-}
-
-.social-media-icons i{
-    font-size: 2.5rem;
-    transition: 0.2s ease-in-out;
-}
-
-.social-media-icons i:hover{
-    transform: scale(1.1);
-}
-
 
 ::-webkit-scrollbar{
     width: 20px;
@@ -235,6 +220,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 5em;
+    margin-top: 12px;
 }
 
 .about-box{
@@ -303,6 +289,8 @@ section{
 #about img{
     width: 30vw;
     border-radius: 1em;
+    margin-top: 12px;
+
 }
 
 /*Services*/
@@ -406,4 +394,147 @@ form .btn:hover{
     color: blue;
     border: 2px solid aqua;
 
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10em;
+    bottom: 0;
+    width: 100%;
+    padding: 5em 15%;
+    border: 2px solid blue;
+}
+
+.col-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.col-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.col-box i{
+    font-size: 2m;
+}
+
+.col-box span{
+    font-size: 1em;
+}
+
+.col-right{
+    display: flex;
+    gap: 1em;
+    max-width: 500px;
+}
+
+.col-right span{
+    font-size: 1em;
+}
+
+
+.social-media-icons{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.social-media-icons i{
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.social-media-icons i:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width:968px) {
+    section{
+        padding: 8em 15%;
+    }
+    nav .contact-btn{
+        display: none;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .navbar-menu{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding: 1em 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: aqua;
+        display: none;
+    }
+    .navbar-menu a{
+        margin: 2em;
+        font-size: 1.5em;
+    }
+    .navbar-menu.actve{
+        display: block;
+    }
+    #home h1{
+        font-size: 4em;
+    }
+    #home h3{
+        font-size: 2em;
+    }
+    #home img{
+        width: 24vw;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+    #about img{
+        width: 32vw;
+    }
+    #about h1{
+        font-size: 3em;
+        
+    }
+    #about ul{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:768px) {
+    #home h1{
+        font-size: 2.5em;
+    }
+    #home h3{
+        font-size: 1.5em;
+    }
+    #home img{
+        width: 32vw;
+    }
+
+    #about .skills{
+        gap: 3em;
+    }
+    #services .header{
+        font-size: 3em;
+    }
+    #contact .header{
+        font-size: 3em;
+    }
+
+    #contact input{
+        padding: 0.5em;
+    }
+    footer{
+        flex-direction: column;
+        gap: 5em;
+        align-items: baseline;
+    }
 }
