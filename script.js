@@ -1,7 +1,7 @@
-const menu =document.querySelector("#menu-btn");
-const nav = document.querySelector(".navbar-menu");
+const menu =document.querySelector("#menu");
+const nav = document.querySelector(".links");
 
 menu.oclick = () =>{
-    menu.classList.toggle('bx-x');
+    menu.classList.toggle('fa-xmark');
     nav.classList.toggle('active');
 }

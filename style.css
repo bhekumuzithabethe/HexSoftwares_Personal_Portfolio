@@ -32,7 +32,7 @@ nav{
     backdrop-filter: blur(8px);
     border: solid 3px blue;
 }
-#menu-btn{
+#menu{
     background: var(--primary);
     background-clip: text;
     color: transparent;
@@ -60,7 +60,7 @@ nav{
 .logo:hover{
     transform: scale(1.1);
 }
-.navbar-menu{
+.links{
     display: flex;
     gap: 2rem;
 }
@@ -462,12 +462,13 @@ footer{
     nav .contact-btn{
         display: none;
     }
-    #menu-btn{
+    #menu{
         display: block;
     }
-    .navbar-menu{
+    .links{
         position: absolute;
         top: 100%;
+        right: 0;
         width: 100%;
         padding: 1em 3em;
         display: flex;
@@ -476,11 +477,12 @@ footer{
         background: aqua;
         display: none;
     }
-    .navbar-menu a{
+    .links a{
         margin: 2em;
         font-size: 1.5em;
+        display: block;
     }
-    .navbar-menu.active{
+    .links.active{
         display: block;
     }
     #home h1{
