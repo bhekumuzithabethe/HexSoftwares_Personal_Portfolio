@@ -1,0 +1,409 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary: linear-gradient(to left,rgb(0, 4, 255),rgb(255, 0, 179));
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: -3px;
+    width: 100%;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    padding: 1.5rem 1.5rem;
+    font-size: 21px;
+    font-weight: bold;
+    z-index: 1000;
+    gap: 5rem;
+    backdrop-filter: blur(8px);
+    border: solid 3px blue;
+}
+#menu-btn{
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    display: none;
+}
+/*Logo*/
+.logo{
+    display: flex;
+    text-wrap: nowrap;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 24px;
+    transition: 0.3s ease-in-out;
+}
+.logo a{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.navbar-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+li a{
+    position: relative;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    font-weight: 300;
+}
+
+li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out ;
+    background: var(--primary);
+}
+
+li a:hover::before{
+    width: 100%;
+}
+
+/*Navbar contact me button*/
+.contact-btn{
+    border: 2px solid blue;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5rem 1em;
+    border: 2px solid aqua;
+
+    
+}
+.contact-btn:hover{
+    transform: scale(1.2);
+    background: var(--primary);
+    color: white;
+}
+
+/*Home*/
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+    margin-top:15px ;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    color: black;
+}
+#home img{
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    max-width: 500px;
+
+}
+
+.info-box h1{
+    font-size: 2.8em;
+    font-weight: 500;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.info-box h3 span{
+    font-size: 1.6em;
+    font-weight: 500;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.info-box h3{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+
+/*About me button*/
+.btn-box .btn:nth-of-type(1){
+    background: var(--primary);
+    color: white;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 1.5rem 1em;
+    border: 2px solid aqua;
+
+    
+}
+.btn-box .btn:nth-of-type(1):hover{
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.2);
+
+}
+/*Hire me button*/
+.btn-box .btn:nth-of-type(2){
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 1.5rem 1em;
+    border: 2px solid aqua;
+    
+}
+.btn-box .btn:nth-of-type(2):hover{
+    background: var(--primary);
+    color: white;
+    transform: scale(1.2);
+
+}
+.social-media-icons{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.social-media-icons i{
+    font-size: 2.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.social-media-icons i:hover{
+    transform: scale(1.1);
+}
+
+
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary);
+}
+
+/*About*/
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+.about-box h1{
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    
+}
+.about-info h1{
+    margin-top: 1.5em;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-box h1{
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skills{
+    display: flex;
+    text-align: left;
+}
+
+.skills ul {
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    align-items: baseline;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.skills ul li{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out;
+}
+
+.skills ul li:hover{
+    transform: translate(10px);
+    color: blue;
+}
+
+.skills ul li i{
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+}
+
+/*Services*/
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    
+}
+.box h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0;
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    
+}
+.serveces-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:2em;
+
+}
+
+.box{
+    border: 3px solid blue;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+.box:hover{
+    border: 3px solid rgb(0, 255, 255);
+}
+
+.box img{
+    min-width: 25px;
+    border-radius: 0.5em;
+}
+
+form{
+    margin: 1em;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background: var(--primary);
+    border-radius: 5em;
+}
+
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+
+form input{
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    padding: 1em 5em;
+    font-size: 1.3em;
+}
+
+
+
+form input:focus{
+    background: aqua;
+}
+
+
+form .btn{
+    border: 2px solid blue;
+    background: white;
+    color: blue;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5rem 1em;
+
+    
+}
+form .btn:hover{
+    transform: scale(1.2);
+    background: aqua;
+    color: blue;
+    border: 2px solid aqua;
+
+}
