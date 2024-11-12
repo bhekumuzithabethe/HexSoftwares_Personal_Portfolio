@@ -480,7 +480,7 @@ footer{
         margin: 2em;
         font-size: 1.5em;
     }
-    .navbar-menu.actve{
+    .navbar-menu.active{
         display: block;
     }
     #home h1{
