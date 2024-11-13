@@ -15,7 +15,7 @@
     
     <!--Navbar-->
     <nav class="navbar">
-        <i class="fa-solid fa-bars"id="menu"></i>
+        
         <div class="logo">
             <img src="images/logo.png" alt="Logo not found">
             <a href="#" class="logo">Bhekumuzi Thabethe</a>
@@ -30,6 +30,7 @@
 
         </ul>
 
+        <i class="fa-solid fa-bars" id="menu"></i>
         <a href="#contact" class="contact-btn">Contact Me</a>
 
     </nav>
@@ -136,6 +137,79 @@
         </div>
     </section>
 
+
+<!--Services-->
+<section id="projects">
+    <h1 class="projects-header"><span>My Projects</span></h1>
+
+    <div class="projects-container">
+        <div class="projects-box">
+            <h1><span>Django CRUD Operations</span></h1>
+            <p> This is an employee management system, whereby a user or an admin can create, read, 
+                update and delete employee details.
+                The project is built using Django 4, HTML 5, CSS 3, and Bootstrap 5 with a Bootswatch theme.</p>
+            <img src="images/home.png" alt="Image not found">
+            <div class="btn-box">
+                <a href="#about" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/bhekumuzithabethe/django-crud-operations" target="_blank" class="btn">GitHub Repo</a>
+    
+            </div>
+        </div>
+    
+        <div class="projects-box">
+            <h1><span>Django CRUD Resume Builder</span></h1>
+            <p> Ispani is a resume builder project, whereby a user can create a resume,
+                 update resume details and download the resume they created. THis project 
+                 only allowes registered users to create resumes, therefore if you are not a 
+                 registered user you won't be able to create a resume in the platform. The project 
+                 is built using Django 4, HTML 5, CSS 3, and Bootstrap 5 with a Bootswatch theme.
+                
+            <img src="images/resume.png" alt="Image not found">
+            <div class="btn-box">
+                <a href="#about" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/bhekumuzithabethe/django-resume-builder" target="_blank" class="btn">GitHub Repo</a>
+    
+            </div>
+        </div>
+
+        <div class="projects-box">
+            <h1><span>Django ToDo List</span></h1>
+            <p> This is a django ToDo list app, whereby a users can create,
+                 read, update and delete tasks they need to do. The project is
+                  built using Django 4, HTML 5, CSS 3, and Bootstrap 5 with a Bootswatch theme.
+            <img src="images/resume.png" alt="Image not found">
+            <div class="btn-box">
+                <a href="#about" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/bhekumuzithabethe/django-ToDo-list" target="_blank" class="btn">GitHub Repo</a>
+    
+            </div>
+        </div>
+        
+        <div class="projects-box">
+            <h1><span>Django Banking App</span></h1>
+            <p> Thabethe banking is a banking project, whereby a consultant can create clients,bank accounts, 
+                and client banking cards.Consultants can only be registerd or created by the bank manager, and
+                 the bank manager is able to do everything the bank consultant can do.User's or clients can view 
+                 their account transactions,account balance and account number. Clients can make withdrawalls using
+                  their card number and the account the client wants to withdraw money from. Transfers can only be
+                   made if a user has multiple bank accounts with us, if a client wishes to send or transfer money
+                    to someone they can make use of the pay tab to pay an account registered in our database/bank. 
+                    Clients are also able to make deposits given an account number they wish to deposit into.
+                  And this is not a real bank it is just the software part of a banking system I have developed.
+                <img src="images/bank.png" alt="Image not found">
+            <div class="btn-box">
+                <a href="#about" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/bhekumuzithabethe/django-banking-app" target="_blank" class="btn">GitHub Repo</a>
+    
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+
+
+
     <!--Contact-->
     <section id="contact">
         <h1 class="header"><span>Contact</span></h1>
@@ -150,7 +224,8 @@
             </div>
                 
             <div class="input-box">
-                <input type="text-box" placeholder="Enter Your Full Message" name="message">
+                <textarea name="message" id="message" placeholder="Enter Your Full Message"></textarea>
+
             </div>
             <button  type="submit" class="btn">Submit</button>                
         </form>
