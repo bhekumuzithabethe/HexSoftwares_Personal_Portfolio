@@ -45,7 +45,6 @@ nav{
     background: var(--primary);
     background-clip: text;
     color: transparent;
-    font-weight: 1000;
     font-size: 24px;
     transition: 0.3s ease-in-out;
 }
@@ -128,7 +127,76 @@ section{
     width: 18vw;
     border-radius: 50%;
     margin-top: 3em;
+    grid-area: 1/1;
+
 }
+
+
+.image{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.image i{
+    font-size: 50px;
+}
+
+.image .bootstrap{
+    grid-area: 1/1;
+    margin-top: -150px;
+    margin-right: 260px;
+    color: purple;
+    animation: bouncing 5s ease-in-out infinite;
+}
+
+.image .css{
+    grid-area: 1/1;
+    margin-top: 150px;
+    margin-right: 252px;
+    color: blue;
+    animation: bouncing 5s ease-in-out infinite;
+
+}
+
+.image .wordpress{
+    grid-area: 1/1;
+    margin-top: 170px;
+    margin-left: 232px;
+    color: blue;
+    animation: bouncing 5s ease-in-out infinite;
+
+}
+.image .html{
+    grid-area: 1/1;
+    margin-top: -150px;
+    margin-left: 170px;
+    color: orangered;
+    animation: bouncing 5s ease-in-out infinite;
+
+}
+.image .django{
+    grid-area: 1/1;
+    
+    animation: bouncing 5s ease-in-out infinite;
+    width: 40px;
+    height: 50px;
+    border: radius 50%;
+}
+
+
+@keyframes bouncing {
+    0%{
+        transform: translate(18px,28px);
+    }
+    50%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(18px,28px);
+    }
+}
+
 
 .info-box{
     display: flex;
@@ -383,6 +451,9 @@ form input:focus{
     background: aqua;
 }
 
+form textarea:focus{
+    background: aqua;
+}
 
 form .btn{
     border: 2px solid blue;
@@ -463,6 +534,7 @@ footer{
 
 
 
+
 @media (max-width:968px) {
     section{
         padding: 8em 15%;
@@ -476,8 +548,7 @@ footer{
     .links{
         position: absolute;
         top: 100%;
-        right: 0;
-        width: 100%;
+        width: 70%;
         padding: 1em 3em;
         display: flex;
         flex-direction: column;
@@ -487,8 +558,8 @@ footer{
         display: none;
     }
     .links a{
-        margin: 2em;
-        font-size: 1.5em;
+        margin: 1em;
+        font-size: 1em;
         display: block;
         color: white;
 
@@ -525,6 +596,7 @@ footer{
 }
 
 @media (max-width:768px) {
+    
     #home h1{
         font-size: 2.5em;
     }
@@ -534,15 +606,25 @@ footer{
     #home img{
         width: 32vw;
     }
-
+    
     #about .skills{
-        gap: 3em;
+        gap: 1em;
     }
     #services .header{
-        font-size: 3em;
+        font-size: 2em;
     }
+    #projects .projects-header{
+        font-size: 2em;
+    }
+    .box h1{
+        font-size: 1em;
+    }
+    .projects-container .projects-box h1{
+        font-size: 1em;
+    }
+   
     #contact .header{
-        font-size: 3em;
+        font-size: 1em;
     }
 
     #contact input{
@@ -550,13 +632,30 @@ footer{
     }
     #contact textarea{
         width: 40vw;
+        font-size: 1em;
+        padding: 1em 2em;
+
+    }
+    form{
+        margin: 1em;
+        padding: 1em;
+        gap: 1em;
+        border-radius: 2em;
+    }
+    form input{
+        border-radius: 0.5em;
+        padding: 1em 2em;
+        font-size: 0.8em;
     }
     footer{
         flex-direction: column;
-        gap: 5em;
+        gap: 3em;
         align-items: baseline;
     }
 }
+
+
+
 
 
 
