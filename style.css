@@ -596,8 +596,11 @@ footer{
         width: 60vw;
     }
     .projects-container{
-        left:0;
-        margin-right: 1em;
+       width:100vw;
+        
+    }
+    .projects-box{
+        width:100%;
     }
     #contact form{
         width: 80vw;
@@ -664,8 +667,11 @@ footer{
         align-items: baseline;
     }
     .projects-container{
-        left:0;
-        margin-right: 1em;
+       width:100vw;
+        
+    }
+    .projects-box{
+        width:100%;
     }
     #contact form{
         width: 100%;
