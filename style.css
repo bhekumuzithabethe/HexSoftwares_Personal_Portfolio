@@ -593,7 +593,14 @@ footer{
         font-size: 1em;
     }
     #contact textarea{
-        width: 20vw;
+        width: 60vw;
+    }
+    .projects-container{
+        left:0;
+        margin-right: 1em;
+    }
+    #contact form{
+        width: 80vw;
     }
 }
 
@@ -658,7 +665,7 @@ footer{
     }
     .projects-container{
         left:0;
-        margin-left: -1em;
+        margin-right: 1em;
     }
     #contact form{
         width: 100%;
