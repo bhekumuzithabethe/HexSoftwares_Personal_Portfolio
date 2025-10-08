@@ -601,6 +601,7 @@ footer{
     }
     .projects-box{
         width:100%;
+        margin-right:2em;
     }
     #contact form{
         width: 80vw;
@@ -668,6 +669,8 @@ footer{
     }
     .projects-container{
        width:100vw;
+                margin-right:2em;
+
         
     }
     .projects-box{
