@@ -606,6 +606,10 @@ footer{
     #contact form{
         width: 80vw;
     }
+     #projects{
+                margin-right:2em;
+
+    }
 }
 
 @media (max-width:768px) {
@@ -678,6 +682,10 @@ footer{
     }
     #contact form{
         width: 100%;
+    }
+    #projects{
+                margin-right:2em;
+
     }
 }
 
