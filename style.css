@@ -12,6 +12,7 @@
 
 body{
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 nav{
@@ -606,7 +607,9 @@ footer{
     #home img{
         width: 32vw;
     }
-    
+    #about .about-info{
+        padding: 1em;
+    }
     #about .skills{
         gap: 1em;
     }
@@ -651,6 +654,13 @@ footer{
         flex-direction: column;
         gap: 3em;
         align-items: baseline;
+    }
+    .projects-container{
+        left:0;
+        margin-left: -1em;
+    }
+    #contact form{
+        width: 100%;
     }
 }
 
