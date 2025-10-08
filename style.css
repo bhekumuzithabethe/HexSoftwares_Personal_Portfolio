@@ -16,8 +16,7 @@ body{
 }
 
 nav{
-    position: fixed;
-    align-items: center;
+    position: sticky;
     justify-content: space-between;
     display: flex;
     top: -3px;
@@ -25,11 +24,11 @@ nav{
     background: var(--primary);
     background-clip: text;
     color: transparent;
-    padding: 1.5rem 1.5rem;
-    font-size: 21px;
+    padding: 1rem 1rem;
+    font-size: 18px;
     font-weight: bold;
     z-index: 1000;
-    gap: 5rem;
+    gap: 3rem;
     backdrop-filter: blur(8px);
     border: solid 3px blue;
 }
